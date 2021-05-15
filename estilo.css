@@ -15,3 +15,19 @@ body {
         background-color: blueviolet;
         max-width: 500px;
     }
+    h1 {
+        margin-bottom: 20px;
+margin-left: 450px;
+font-family: Verdana,Tahoma,sans-serif;
+color: #66FFFF;
+text-shadow: 5px 5px 5px black;
+}
+
+h2 {
+    margin-bottom: 20px;
+    font-family: Verdana,Tahoma,sans-serif;
+    margin-left: 20px;
+    color: #66FFFF;
+    text-shadow: 5px 5px 5px black;
+}
+
