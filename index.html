@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>FORMULÁRIO2.0</title>
+</head>
+<header>
+
+</header>
+<main>
+<body>
+<h1>
+Formulário de cadastro atração e seleção Itaú
+</h1>
+
+<section>
+<article>
+<p>
+Seja bem-vindo a essa etapa inicial de preenchimento do seu cadastro conosco. 
+</p>
+<p>
+É imprescindível que você preencha com informações válidas e atualizadas, pois será através desse formulário que entraremos em contato.
+</P>
+<p> 
+Nós do Itaú desde já desejamos boa sorte!
+</p>
+<br>
+</article>
+</section>
+<section>
+<article>
+    <div class="container form">
+        <form>
+<h2> 
+Informações Gerais 
+</h2>
+<input type='text' required='required' placeholder='Nome completo'> 
+<br>
+<input type='text' maxlength='11' required 
+onkeypress="return validaCPF(event,this);return true;"
+placeholder='CPF'> 
+<br>
+<input type='text' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
+<br>
+<label for='sexo'> Sexo </label>
+<select id='sexo'> 
+<option value=''>Selecione</option>
+<option value='Feminino'>Feminino</option>
+<option value='Masculino'>Masculino</option>
+<option value='Prefiro não informar'>Prefiro não informar</option>
+</select>
+ <br>
+<h2>
+Informações de contato
+</h2>
+<input type='text' required='required' placeholder='Endereço'> 
+<br>
+ <input type='text' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
+<br>
+<input type='text' maxlength='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP'> 
+<br>
+<input type='text' placeholder='Bairro'> 
+<br>
+<input type='text' placeholder='Cidade'> 
+<br>
+<label for='estado'> Estado </label>
+<select id='estado' >
+<option value=''>Selecione</option>
+<option value='AC'>AC</option>
+<option value='AL'>AL</option>
+<option value='AM'>AM</option>
+<option value='AP'>AP</option>
+<option value='BA'>BA</option>
+<option value='CE'>CE</option>
+<option value='DF'>DF</option>
+<option value='ES'>ES</option>
+<option value='GO'>GO</option>
+<option value='MA'>MA</option>
+<option value='MG'>MG</option>
+<option value='MS'>MS</option>
+<option value='MT'>MT</option>
+<option value='PA'>PA</option>
+<option value='PB'>PB</option>
+<option value='PE'>PE</option>
+<option value='PI'>PI</option>
+<option value='PR'>PR</option>
+<option value='RJ'>RJ</option>
+<option value='RN'>RN</option>
+<option value='RS'>RS</option>
+<option value='RO'>RO</option>
+<option value='RR'>RR</option>
+<option value='SC'>SC</option>
+<option value='SE'>SE</option>
+<option value='SP'>SP</option>
+<option value='TO'>TO</option>
+ </select>
+<br>
+<input type='text' maxlength='2' size='2' value='' required onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
+<br>
+<input type='text' maxlength='9' value='' required onkeypress='return SomenteNumero(event)' placeholder='Celular'> 
+<br>
+<input type='text' maxlength='2' value='' onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
+<br>
+<input type='text' maxlength'8' value='' onkeypress='return SomenteNumero(event)' placeholder='Telefone'> 
+<br>
+            <button type="button" class="btn btn-info" onclick="validacao()" return false;> Enviar </button>
+        </form>
+    </div>
+    <div class="container page-header">
+        <div id="success" class="alert alert-success" style="display: none;" role="alert">
+            <strong>Oba!</strong> Seu CPF é válido
+        </div>
+        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+            <strong>Ops!</strong> Seu CPF não é válido
+        </div>
+    </div>
+</article>
+</section>
+</main>
+    <footer class="footer">
+<p>
+Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de desafio junto ao Itaú e a Gama.
+</p>
+    </footer>
+</body>
+</html>
