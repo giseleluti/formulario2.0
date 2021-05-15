@@ -31,3 +31,9 @@ h2 {
     text-shadow: 5px 5px 5px black;
 }
 
+p {
+    margin-left: 340px;
+    font-size: 18px;
+   color: black;
+}
+
