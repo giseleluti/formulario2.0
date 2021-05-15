@@ -5,7 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FORMULÁRIO2.0</title>
+    <link rel="stylesheet" type="text/css" href="estilo.css">
+<title>FORMULÁRIO2.0</title>
 </head>
 <header>
 
@@ -22,7 +23,7 @@ Formulário de cadastro atração e seleção Itaú
 Seja bem-vindo a essa etapa inicial de preenchimento do seu cadastro conosco. 
 </p>
 <p>
-É imprescindível que você preencha com informações válidas e atualizadas, pois será atravéz desse formulário que entraremos em contato.
+É imprescindível que você preencha com informações válidas e atualizadas, pois será através desse formulário que entraremos em contato.
 </P>
 <p> 
 Nós do Itaú desde já desejamos boa sorte!
@@ -32,14 +33,16 @@ Nós do Itaú desde já desejamos boa sorte!
 </section>
 <section>
 <article>
-    <div class="container formulario">
+    <div class="container form">
         <form>
 <h2> 
 Informações Gerais 
 </h2>
 <input type='text' required='required' placeholder='Nome completo'> 
 <br>
-<input type='text' maxlength='11' value='' required onkeypress='return SomenteNumero(event)' placeholder='CPF'> 
+<input type='text' maxlength='11' required 
+onkeypress="return validaCPF(event,this);return true;"
+placeholder='CPF'> 
 <br>
 <input type='text' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
 <br>
@@ -51,9 +54,9 @@ Informações Gerais
 <option value='Prefiro não informar'>Prefiro não informar</option>
 </select>
  <br>
-<h3>
+<h2>
 Informações de contato
-</h3>
+</h2>
 <input type='text' required='required' placeholder='Endereço'> 
 <br>
  <input type='text' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
@@ -96,7 +99,7 @@ Informações de contato
 <option value='TO'>TO</option>
  </select>
 <br>
-<input type='text' maxlength='2' value='' required onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
+<input type='text' maxlength='2' size='2' value='' required onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
 <br>
 <input type='text' maxlength='9' value='' required onkeypress='return SomenteNumero(event)' placeholder='Celular'> 
 <br>
@@ -104,7 +107,7 @@ Informações de contato
 <br>
 <input type='text' maxlength'8' value='' onkeypress='return SomenteNumero(event)' placeholder='Telefone'> 
 <br>
-            <button type="button" class="btn btn-info" onclick="validacao()">Enviar</button>
+            <button type="button" class="btn btn-info" onclick="validacao()" return false;> Enviar </button>
         </form>
     </div>
     <div class="container page-header">
@@ -123,17 +126,5 @@ Informações de contato
 Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de desafio junto ao Itaú e a Gama.
 </p>
     </footer>
-
-<script language='JavaScript'>
-function SomenteNumero(e){
-    var tecla=(window.event)?event.keyCode:e.which;   
-    if((tecla>47 && tecla<58)) return true;
-    else{
-    	if (tecla==8 || tecla==0) return true;
-	else  return false;
-    }
-}
-</script>
 </body>
 </html>
-https://www.devmedia.com.br/criando-form-de-contato-com-html5-css3-e-javascript/29415
