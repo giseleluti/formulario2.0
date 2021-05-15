@@ -37,9 +37,9 @@ Nós do Itaú desde já desejamos boa sorte!
 <h2> 
 Informações Gerais 
 </h2>
-<input type='text' size='50' value='' required onkeypress='return SomenteNumero(event)' placeholder='Nome completo'> 
+<input type='text' required='required' placeholder='Nome completo'> 
 <br>
-<input type='text' size='11' value='' required onkeypress='return SomenteNumero(event)' placeholder='Seu CPF'> 
+<input type='text' size='11' value='' required onkeypress='return SomenteNumero(event)' placeholder='CPF'> 
 <br>
 <input type='text' size='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
 <br>
@@ -54,15 +54,15 @@ Informações Gerais
 <h3>
 Informações de contato
 </h3>
-<input type='text' size='20' value='' required onkeypress='return SomenteNumero(event)' placeholder='Endereço'> 
+<input type='text' required='required' placeholder='Endereço'> 
 <br>
  <input type='text' size='6' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
 <br>
 <input type='text' size='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP'> 
 <br>
-<input type='text' size='20' value='' onkeypress='return SomenteNumero(event)' placeholder='Bairro'> 
+<input type='text' placeholder='Bairro'> 
 <br>
-<input type='text' size='20' value='' onkeypress='return SomenteNumero(event)' placeholder='Cidade'> 
+<input type='text' placeholder='Cidade'> 
 <br>
 <label for='estado'> Estado </label>
 <select id='estado' >
@@ -119,10 +119,17 @@ Informações de contato
 Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de desafio junto ao Itaú e a Gama.
 </p>
     </footer>
-<script>
 
+<script language='JavaScript'>
+function SomenteNumero(e){
+    var tecla=(window.event)?event.keyCode:e.which;   
+    if((tecla>47 && tecla<58)) return true;
+    else{
+    	if (tecla==8 || tecla==0) return true;
+	else  return false;
+    }
+}
 </script>
-
 </body>
 </html>
 https://www.devmedia.com.br/criando-form-de-contato-com-html5-css3-e-javascript/29415
