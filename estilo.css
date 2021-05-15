@@ -22,7 +22,6 @@ font-family: Verdana,Tahoma,sans-serif;
 color: #66FFFF;
 text-shadow: 5px 5px 5px black;
 }
-
 h2 {
     margin-bottom: 20px;
     font-family: Verdana,Tahoma,sans-serif;
@@ -30,13 +29,11 @@ h2 {
     color: #66FFFF;
     text-shadow: 5px 5px 5px black;
 }
-
 p {
     margin-left: 340px;
     font-size: 18px;
    color: black;
 }
-
 input {
     width: 200px;
     padding: 10px;
@@ -47,7 +44,6 @@ input {
     -moz-border-radius: 5px;
     border: 1px solid;
 }
-
 input:hover, textarea:hover, input:focus, textarea:focus {
     border-color: #000066;
     box-shadow: 5px 0px 9px #FFFF00;
@@ -75,3 +71,9 @@ textarea {
     line-height: 20px;
     max-width: 400px;
 }
+form label {
+    margin-left: 20px;
+    color: #FFFFFF;
+    font-weight: bold;
+}    
+
