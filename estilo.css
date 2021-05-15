@@ -55,3 +55,17 @@ input:hover, textarea:hover, input:focus, textarea:focus {
     color: black;
     font-weight: bold;
 }
+.btn {
+    margin-top: 30px;
+    margin-bottom: 20px;
+margin-left: 20px;
+height: 30px;
+width: 75px;
+font-weight: bold;
+border-radius: 5px;
+-webkit-border-radius: 5px;
+-moz-border-radius: 5px;
+border: 1px solid;
+color: black;
+}
+
