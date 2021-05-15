@@ -37,18 +37,16 @@ Nós do Itaú desde já desejamos boa sorte!
 <h2> 
 Informações Gerais 
 </h2>
-<label> Nome completo</label> 
-<input type='text' size='50' value='' required onkeypress='return SomenteNumero(event)'> 
+<input type='text' size='50' value='' required onkeypress='return SomenteNumero(event)' placeholder='Nome completo'> 
 <br>
-<label>CPF </label> <input type='text' size='11' value='' required onkeypress='return SomenteNumero(event)'> 
+<input type='text' size='11' value='' required onkeypress='return SomenteNumero(event)' placeholder='Seu CPF'> 
 <br>
-<label>RG </label>  
-<input type='text' size='9' value='' onkeypress='return SomenteNumero(event)'> 
+<input type='text' size='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
 <br>
 <label> Sexo </label>
-<select name='sx' id='sx'>
-<option value="">Selecione</option>
-<option value="Feminino">Feminino</option>
+<select id='sexo'> 
+<option value=''>Selecione</option>
+<option value='Feminino'>Feminino</option>
 <option value='Masculino'>Masculino</option>
 <option value='Prefiro não informar'>Prefiro não informar</option>
 </select>
@@ -56,23 +54,18 @@ Informações Gerais
 <h3>
 Informações de contato
 </h3>
-<label> Endereço </label> 
-<input type='text' size='20' value='' required onkeypress='return SomenteNumero(event)'> 
+<input type='text' size='20' value='' required onkeypress='return SomenteNumero(event)' placeholder='Endereço'> 
 <br>
-<label>  Número </label>
- <input type='text' size='6' value='' required onkeypress='return SomenteNumero(event)'> 
+ <input type='text' size='6' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
 <br>
-<label> CEP </label> 
-<input type='text' size='8' value='' onkeypress='return SomenteNumero(event)'> 
+<input type='text' size='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP'> 
 <br>
-<label> Bairro </label> 
-<input type='text' size='20' value='' onkeypress='return SomenteNumero(event)'> 
+<input type='text' size='20' value='' onkeypress='return SomenteNumero(event)' placeholder='Bairro'> 
 <br>
-<label> Cidade </label> 
-<input type='text' size='20' value='' onkeypress='return SomenteNumero(event)'> 
+<input type='text' size='20' value='' onkeypress='return SomenteNumero(event)' placeholder='Cidade'> 
 <br>
 <label> Estado </label>
-<select name='uf' id='uf'>
+<select id='estado' >
 <option value=''>Selecione</option>
 <option value='AC'>AC</option>
 <option value='AL'>AL</option>
@@ -103,11 +96,9 @@ Informações de contato
 <option value='TO'>TO</option>
  </select>
 <br>
-<label> Celular </label> 
-<input type='text' size='11' value='' required onkeypress='return SomenteNumero(event)'> 
+<input type='text' size='11' value='' required onkeypress='return SomenteNumero(event)' placeholder='Celular'> 
 <br>
-<label> Telefone fixo </label> 
-<input type='text' size='10' value='' onkeypress='return SomenteNumero(event)'> 
+<input type='text' size='10' value='' onkeypress='return SomenteNumero(event)' placeholder='Telefone'> 
 <br>
             <button type="button" class="btn btn-info" onclick="validacao()">Enviar</button>
         </form>
@@ -134,3 +125,4 @@ Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de d
 
 </body>
 </html>
+https://www.devmedia.com.br/criando-form-de-contato-com-html5-css3-e-javascript/29415
