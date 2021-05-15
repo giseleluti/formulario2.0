@@ -37,3 +37,14 @@ p {
    color: black;
 }
 
+input {
+    width: 200px;
+    padding: 10px;
+    color: gray#FFAADD;;
+    margin-left: 20px;
+    margin-top: 10px;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border: 1px solid;
+}
+
