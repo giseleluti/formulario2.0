@@ -39,9 +39,9 @@ Informações Gerais
 </h2>
 <input type='text' required='required' placeholder='Nome completo'> 
 <br>
-<input type='text' size='11' value='' required onkeypress='return SomenteNumero(event)' placeholder='CPF'> 
+<input type='text' maxlength='11' value='' required onkeypress='return SomenteNumero(event)' placeholder='CPF'> 
 <br>
-<input type='text' size='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
+<input type='text' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
 <br>
 <label for='sexo'> Sexo </label>
 <select id='sexo'> 
@@ -56,9 +56,9 @@ Informações de contato
 </h3>
 <input type='text' required='required' placeholder='Endereço'> 
 <br>
- <input type='text' size='6' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
+ <input type='text' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
 <br>
-<input type='text' size='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP'> 
+<input type='text' maxlength='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP'> 
 <br>
 <input type='text' placeholder='Bairro'> 
 <br>
@@ -96,9 +96,9 @@ Informações de contato
 <option value='TO'>TO</option>
  </select>
 <br>
-<input type='text' size='11' value='' required onkeypress='return SomenteNumero(event)' placeholder='Celular'> 
+<input type='text' maxlength='9' value='' required onkeypress='return SomenteNumero(event)' placeholder='Celular'> 
 <br>
-<input type='text' size='10' value='' onkeypress='return SomenteNumero(event)' placeholder='Telefone'> 
+<input type='text' maxlength'8' value='' onkeypress='return SomenteNumero(event)' placeholder='Telefone'> 
 <br>
             <button type="button" class="btn btn-info" onclick="validacao()">Enviar</button>
         </form>
