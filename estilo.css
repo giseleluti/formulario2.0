@@ -69,3 +69,9 @@ border: 1px solid;
 color: black;
 }
 
+textarea {
+    width: 400px;
+    height: 120px;
+    line-height: 20px;
+    max-width: 400px;
+}
