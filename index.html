@@ -27,8 +27,36 @@ Seja bem-vindo a essa etapa inicial de preenchimento do seu cadastro conosco.
 <p> 
 Nós do Itaú desde já desejamos boa sorte!
 </p>
+<br>
 </article>
-
+</section>
+<section>
+<article>
+    <div class="container formulario">
+        <form>
+<h2> 
+Informações Gerais 
+</h2>
+<label> Nome completo</label> 
+<input type='text' size='50' value='' required onkeypress='return SomenteNumero(event)'> 
+<br>
+<label>CPF </label> <input type='text' size='11' value='' required onkeypress='return SomenteNumero(event)'> 
+<br>
+<label>RG </label>  
+<input type='text' size='9' value='' onkeypress='return SomenteNumero(event)'> 
+<br> <br>
+            <button type="button" class="btn btn-info" onclick="validacao()">Enviar</button>
+        </form>
+    </div>
+    <div class="container page-header">
+        <div id="success" class="alert alert-success" style="display: none;" role="alert">
+            <strong>Oba!</strong> Seu CPF é válido
+        </div>
+        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
+            <strong>Ops!</strong> Seu CPF não é válido
+        </div>
+    </div>
+</article>
 </section>
 </main>
     <footer class="footer">
