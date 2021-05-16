@@ -135,21 +135,23 @@ Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de d
     try {
         if (window.event) {
             var charCode = window.event.keyCode;
-        } else if (e) {
+        } 
+        else if (e) {
             var charCode = e.which;
-        } else {
+        } 
+        else {
             return true;
         }
-        if (
-            (charCode > 64 && charCode < 91) || 
+        if ((charCode > 64 && charCode < 91) || 
             (charCode > 96 && charCode < 123) ||
-            (charCode > 191 && charCode <= 255) 
-        ){
+            (charCode > 191 && charCode <= 255)    ){
             return true;
-        } else {
+        }
+         else {
             return false;
         }
-    } catch (err) {
+    } 
+    catch (err, ' ') {
         alert(err.Description);
     }
 }
