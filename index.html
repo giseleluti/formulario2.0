@@ -120,8 +120,40 @@ Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de d
             <p> <img src="img/itau.png" alt="logo Itaú" style="height: 100px;"> 
             <img src="img/gama academy.png" alt="logo Gama Academy" style="height: 100px;"> </p>
                     </footer>
-<script src="scripts/somenteNumeros.js" </script>
-<script src="scripts/somenteTexto.js" </script>
+                    <script language='JavaScript'>
+                        function SomenteNumero(e){
+                            var tecla=(window.event)?event.keyCode:e.which;   
+                            if((tecla>47 && tecla<58)) return true;
+                            else{
+                            	if (tecla==8 || tecla==0) return true;
+                            else  return false;
+                            }
+                        }
+                        function ApenasLetras(e, t) {
+    try {
+        if (window.event) {
+            var charCode = window.event.keyCode;
+        } else if (e) {
+            var charCode = e.which;
+        } else {
+            return true;
+        }
+        if (
+            (charCode > 64 && charCode < 91) || 
+            (charCode > 96 && charCode < 123) ||
+            (charCode > 191 && charCode <= 255) // letras com acentos
+        ){
+            return true;
+        } else {
+            return false;
+        }
+    } catch (err) {
+        alert(err.Description);
+    }
+}
+                        </script>
+                           
+
     <script src="scripts/verificar.js" </script>
 </body>
 </html>
