@@ -40,9 +40,7 @@ Informações Gerais
 </h2>
 <input type='text' required='required' placeholder='Nome completo'> 
 <br>
-<input type='text' maxlength='11' required 
-onkeypress="return validaCPF(event,this);return true;"
-placeholder='CPF'> 
+<input type='text' maxlength='11' value='' required='required' onkeypress='return SomenteNumero(event)' placeholder='CPF'> 
 <br>
 <input type='text' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
 <br>
@@ -125,7 +123,9 @@ Informações de contato
 <p>
 Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de desafio junto ao Itaú e a Gama. </p>
             <p> <img src="itau.png" alt="logo Itaú" style="height: 100px;"> 
+                
             <img src="gama academy.png" alt="logo Gama Academy" style="height: 100px;"> </p>
                     </footer>
+       <script src='scripts.js'> </script>             
 </body>
 </html>
