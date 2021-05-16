@@ -43,9 +43,9 @@ onkeypress="return ApenasLetras(event,this);">
 <br>
 <input type='text' name='cpf' maxlength='11' required 
 onkeypress='return SomenteNumero(event)' 
-placeholder='CPF'> 
+placeholder='CPF somente números'> 
 <br>
-<input type='text' name='rg' minlength='9' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
+<input type='text' name='rg' minlength='9' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG somente números'> 
 <br>
 <label for='sexo'> Sexo </label>
 <select id='sexo'> 
@@ -62,7 +62,7 @@ Informações de contato
 <br>
  <input type='text' name='numero' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
 <br>
-<input type='text' name='cep' maxlength='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP'> 
+<input type='text' name='cep' maxlength='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP somente números'> 
 <br>
 <input type='text' name='bairro' required='' placeholder='Bairro'
 onkeypress="return ApenasLetras(event,this);"> 
@@ -104,11 +104,11 @@ onkeypress="return ApenasLetras(event,this);">
 <br>
 <input type='text' name='ddd1' maxlength='2' value='' required='' onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
 <br>
-<input type='text' name='celular' maxlength='9' value='' required='' onkeypress='return SomenteNumero(event)' placeholder='Celular'> 
+<input type='text' name='celular' maxlength='9' value='' required='' onkeypress='return SomenteNumero(event)' placeholder='Celular somente números'> 
 <br>
 <input type='text' name='ddd2' maxlength='2' value='' onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
 <br>
-<input type='text' name='telefone' maxlength'8' value='' onkeypress='return SomenteNumero(event)' placeholder='Telefone'> 
+<input type='text' name='telefone' maxlength'8' value='' onkeypress='return SomenteNumero(event)' placeholder='Telefone somente números'> 
 <br>
             <button type="button" class="btn btn-info" onclick="verificar()"> Enviar </button>
         </form>
