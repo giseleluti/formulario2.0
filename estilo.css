@@ -75,5 +75,11 @@ form label {
     margin-left: 20px;
     color: #FFFFFF;
     font-weight: bold;
-}    
+    }    
 
+img {
+    padding: 4;
+        margin: 3;
+        margin-left: 50px;
+    }         
+    
