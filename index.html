@@ -64,9 +64,11 @@ Informações de contato
 <br>
 <input type='text' name='cep' maxlength='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP'> 
 <br>
-<input type='text' name='bairro' placeholder='Bairro'> 
+<input type='text' name='bairro' required='' placeholder='Bairro'
+onkeypress="return ApenasLetras(event,this);"> 
 <br>
-<input type='text' name='cidade' placeholder='Cidade'> 
+<input type='text' name='cidade' required='' placeholder='Cidade'
+onkeypress="return ApenasLetras(event,this);"> 
 <br>
 <label for='estado'> Estado </label>
 <select id='estado' >
@@ -141,7 +143,7 @@ Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de d
         if (
             (charCode > 64 && charCode < 91) || 
             (charCode > 96 && charCode < 123) ||
-            (charCode > 191 && charCode <= 255) // letras com acentos
+            (charCode > 191 && charCode <= 255) 
         ){
             return true;
         } else {
@@ -151,8 +153,40 @@ Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de d
         alert(err.Description);
     }
 }
+    function verificar(){
+    if (form.nome.value == '' || form.nome.value.length < 6)    {
+        alert ('Por favor preencha corretamente seu nome completo.'); 
+    }
+    if (form.cpf.value == '' || form.cpf.value.length < 11)    {
+        alert ('Por favor preencha corretamente seu CPF.'); 
+    }
+    if (form.rg.value.length < 8)    {
+        alert ('Por favor preencha corretamente o RG.'); 
+   }
+    if (form.endereco.value == '')    {
+        alert ('Por favor preencha o endereço.'); 
+    }
+    if (form.numero.value == '')    {
+        alert ('Por favor preencha o número do endereço.'); 
+    }
+    if (form.bairro.value == '')    {
+        alert ('Por favor informe seu bairro.'); 
+    }
+        if (form.cidade.value == '')    {
+        alert ('Por favor informe sua cidade.'); 
+    }
+        if (form.ddd1.value == '' || form.ddd1.value.length < 2)    {
+        alert ('Por favor preencha o prefixo DDD corretamente.'); 
+    }
+    if (form.celular.value == '' || form.celular.value.length < 9)    {
+        alert ('Por favor preencha o celular corretamente.'); 
+    }
+    else {
+        alert('Parabéns! Seu cadastro foi enviado com sucesso.');
+    }
+    }
                         </script>
-                           
+                          
 
     <script src="scripts/verificar.js" </script>
 </body>
