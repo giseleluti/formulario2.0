@@ -45,7 +45,7 @@ onkeypress="return ApenasLetras(event,this);">
 onkeypress='return SomenteNumero(event)' 
 placeholder='CPF'> 
 <br>
-<input type='text' name='rg' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
+<input type='text' name='rg' minlength='9' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
 <br>
 <label for='sexo'> Sexo </label>
 <select id='sexo'> 
@@ -70,8 +70,8 @@ onkeypress="return ApenasLetras(event,this);">
 <input type='text' name='cidade' required='' placeholder='Cidade'
 onkeypress="return ApenasLetras(event,this);"> 
 <br>
-<label for='estado'> Estado </label>
-<select id='estado' >
+<label =name='estado'> Estado </label>
+<select id='estado' required=''>
 <option value=''>Selecione</option>
 <option value='AC'>AC</option>
 <option value='AL'>AL</option>
@@ -156,33 +156,43 @@ Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de d
     function verificar(){
     if (form.nome.value == '' || form.nome.value.length < 6)    {
         alert ('Por favor preencha corretamente seu nome completo.'); 
+        return false;
     }
     if (form.cpf.value == '' || form.cpf.value.length < 11)    {
         alert ('Por favor preencha corretamente seu CPF.'); 
+        return false;
     }
-    if (form.rg.value.length < 8)    {
-        alert ('Por favor preencha corretamente o RG.'); 
-   }
     if (form.endereco.value == '')    {
         alert ('Por favor preencha o endereço.'); 
+        return false;
     }
     if (form.numero.value == '')    {
         alert ('Por favor preencha o número do endereço.'); 
+        return false;
     }
     if (form.bairro.value == '')    {
         alert ('Por favor informe seu bairro.'); 
+        return false;
     }
         if (form.cidade.value == '')    {
         alert ('Por favor informe sua cidade.'); 
+        return false;
+    }
+    if (form.estado.value == '') {
+        alert('Por favor selecione seu estado');
+        return false;
     }
         if (form.ddd1.value == '' || form.ddd1.value.length < 2)    {
         alert ('Por favor preencha o prefixo DDD corretamente.'); 
+        return false;
     }
     if (form.celular.value == '' || form.celular.value.length < 9)    {
         alert ('Por favor preencha o celular corretamente.'); 
+        return false;
     }
     else {
         alert('Parabéns! Seu cadastro foi enviado com sucesso.');
+        return false;
     }
     }
                         </script>
