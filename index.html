@@ -26,7 +26,7 @@ Seja bem-vindo a essa etapa inicial de preenchimento do seu cadastro conosco.
 É imprescindível que você preencha com informações válidas e atualizadas, pois será através desse formulário que entraremos em contato.
 </P>
 <p> 
-Nós do Itaú desde já desejamos boa sorte!
+Nós do Itaú, desde já desejamos boa sorte!
 </p>
 <br>
 </article>
@@ -34,17 +34,18 @@ Nós do Itaú desde já desejamos boa sorte!
 <section>
 <article>
     <div class="container form">
-        <form>
+        <form name="form">
 <h2> 
 Informações Gerais 
 </h2>
-<input type='text' required='required' placeholder='Nome completo'> 
+<input type='text' name='nome' required='' placeholder='Nome completo'
+onkeypress="return ApenasLetras(event,this);"> 
 <br>
-<input type='text' maxlength='11' required 
-onkeypress="return validaCPF(event,this);return true;"
+<input type='text' name='cpf' maxlength='11' required 
+onkeypress='return SomenteNumero(event)' 
 placeholder='CPF'> 
 <br>
-<input type='text' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
+<input type='text' name='rg' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG'> 
 <br>
 <label for='sexo'> Sexo </label>
 <select id='sexo'> 
@@ -57,15 +58,15 @@ placeholder='CPF'>
 <h2>
 Informações de contato
 </h2>
-<input type='text' required='required' placeholder='Endereço'> 
+<input type='text' name='endereco' required='' placeholder='Endereço'> 
 <br>
- <input type='text' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
+ <input type='text' name='numero' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
 <br>
-<input type='text' maxlength='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP'> 
+<input type='text' name='cep' maxlength='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP'> 
 <br>
-<input type='text' placeholder='Bairro'> 
+<input type='text' name='bairro' placeholder='Bairro'> 
 <br>
-<input type='text' placeholder='Cidade'> 
+<input type='text' name='cidade' placeholder='Cidade'> 
 <br>
 <label for='estado'> Estado </label>
 <select id='estado' >
@@ -99,24 +100,16 @@ Informações de contato
 <option value='TO'>TO</option>
  </select>
 <br>
-<input type='text' maxlength='2' size='2' value='' required onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
+<input type='text' name='ddd1' maxlength='2' value='' required='' onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
 <br>
-<input type='text' maxlength='9' value='' required onkeypress='return SomenteNumero(event)' placeholder='Celular'> 
+<input type='text' name='celular' maxlength='9' value='' required='' onkeypress='return SomenteNumero(event)' placeholder='Celular'> 
 <br>
-<input type='text' maxlength='2' value='' onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
+<input type='text' name='ddd2' maxlength='2' value='' onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
 <br>
-<input type='text' maxlength'8' value='' onkeypress='return SomenteNumero(event)' placeholder='Telefone'> 
+<input type='text' name='telefone' maxlength'8' value='' onkeypress='return SomenteNumero(event)' placeholder='Telefone'> 
 <br>
-            <button type="button" class="btn btn-info" onclick="validacao()" return false;> Enviar </button>
+            <button type="button" class="btn btn-info" onclick="verificar()"> Enviar </button>
         </form>
-    </div>
-    <div class="container page-header">
-        <div id="success" class="alert alert-success" style="display: none;" role="alert">
-            <strong>Oba!</strong> Seu CPF é válido
-        </div>
-        <div id="error" class="alert alert-danger" style="display: none;" role="alert">
-            <strong>Ops!</strong> Seu CPF não é válido
-        </div>
     </div>
 </article>
 </section>
@@ -124,8 +117,11 @@ Informações de contato
     <footer class="footer">
 <p>
 Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de desafio junto ao Itaú e a Gama. </p>
-            <p> <img src="itau.png" alt="logo Itaú" style="height: 100px;"> 
-            <img src="gama academy.png" alt="logo Gama Academy" style="height: 100px;"> </p>
+            <p> <img src="img/itau.png" alt="logo Itaú" style="height: 100px;"> 
+            <img src="img/gama academy.png" alt="logo Gama Academy" style="height: 100px;"> </p>
                     </footer>
+                    <script src="" </script>
+<script src="" </script>
+    <script src="" </script>
 </body>
 </html>
