@@ -63,9 +63,11 @@ Informações de contato
 <br>
 <input type='text' name='cep' maxlength='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP somente números'> 
 <br>
-<input type='text' name='bairro' required='' placeholder='Bairro *'>
+<input type='text' name='bairro' required='' placeholder='Bairro *'
+onkeypress="return ApenasLetras(event,this);"> 
 <br>
-<input type='text' name='cidade' required='' placeholder='Cidade *'>
+<input type='text' name='cidade' required='' placeholder='Cidade *'
+onkeypress="return ApenasLetras(event,this);"> 
 <br>
 <label =name='estado'> Estado * </label>
 <select id='estado' required=''> 
