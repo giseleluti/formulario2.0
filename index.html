@@ -37,14 +37,14 @@ Nós do Itaú, desde já desejamos boa sorte!
 <h2> 
 Informações Gerais 
 </h2>
-<input type='text' name='nome' required='' placeholder='Nome completo'
+<input type='text' name='nome' required='' placeholder='Nome completo *'
 onkeypress="return ApenasLetras(event,this);"> 
 <br>
 <input type='text' name='cpf' maxlength='11' required 
 onkeypress='return SomenteNumero(event)' 
-placeholder='CPF somente números'> 
+placeholder='CPF somente números *'> 
 <br>
-<input type='text' name='rg' maxlength='9' value='' onkeypress='return SomenteNumero(event)' placeholder='RG sem pontos ou traços'> 
+<input type='text' name='rg' maxlength='10' value='' onkeypress='return SomenteNumero(event)' placeholder='RG sem pontos ou traços'> 
 <br>
 <label for='sexo'> Sexo </label>
 <select id='sexo'> 
@@ -57,19 +57,17 @@ placeholder='CPF somente números'>
 <h2>
 Informações de contato
 </h2>
-<input type='text' name='endereco' required='' placeholder='Endereço'> 
+<input type='text' name='endereco' required='' placeholder='Endereço *'> 
 <br>
- <input type='text' name='numero' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número'> 
+ <input type='text' name='numero' value='' required onkeypress='return SomenteNumero(event)' placeholder='Número *'> 
 <br>
 <input type='text' name='cep' maxlength='8' value='' onkeypress='return SomenteNumero(event)' placeholder='CEP somente números'> 
 <br>
-<input type='text' name='bairro' required='' placeholder='Bairro'
-onkeypress="return ApenasLetras(event,this);"> 
+<input type='text' name='bairro' required='' placeholder='Bairro *'>
 <br>
-<input type='text' name='cidade' required='' placeholder='Cidade'
-onkeypress="return ApenasLetras(event,this);"> 
+<input type='text' name='cidade' required='' placeholder='Cidade *'>
 <br>
-<label =name='estado'> Estado </label>
+<label =name='estado'> Estado *</label>
 <select id='estado' required=''>
 <option value=''>Selecione</option>
 <option value='AC'>AC</option>
@@ -101,9 +99,9 @@ onkeypress="return ApenasLetras(event,this);">
 <option value='TO'>TO</option>
  </select>
 <br>
-<input type='text' name='ddd1' maxlength='2' value='' required='' onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
+<input type='text' name='ddd1' maxlength='2' value='' required='' onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD *'> 
 <br>
-<input type='text' name='celular' maxlength='9' value='' required='' onkeypress='return SomenteNumero(event)' placeholder='Celular somente números'> 
+<input type='text' name='celular' maxlength='9' value='' required='' onkeypress='return SomenteNumero(event)' placeholder='Celular somente números *'> 
 <br>
 <input type='text' name='ddd2' maxlength='2' value='' onkeypress='return SomenteNumero(event)' placeholder='Prefixo DDD'> 
 <br>
@@ -124,5 +122,6 @@ Esse formulário foi desenvolvido por Gisele Luti como base de uma proposta de d
     <script src="scripts/somenteNumero.js"></script>
     <script src="scripts/somenteLetras.js"></script>
     <script src="scripts/verificar.js"></script>
+
 </body>
 </html>
