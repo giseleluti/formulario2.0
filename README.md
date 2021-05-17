@@ -9,13 +9,47 @@ Funcionalidades:
 * Validar informações inseridas;
 * Criar um cadastro.
 
+Requisitos:
+No formulário os campos nome, CPF, endereço, número, celular foram identificados como obrigatórios.
+
 Implementações relevantes:
-* atenção a modelagem de dados;
-* Conformidade com acessibilidade;
-* Design clean.
+•	 Modelagem de dados aprimorada
+•	 Critérios de apenas números usando o Onkeypress
+(CPF, RG, CEP, DDD, telefone e celular)
+•	Critério de letras, acentuação  e espaço usando onkeypress
+(nome, bairro e cidade)
+•	Limite de caracteres máximo e mínimo
+Nome min 6; RG min 7, max 10; CPF = 11; CEP =8; DDD = 2; telephones min 8, max 9;
+•	Critério de preenchimento nos campos não obrigatórios, caso o usuário insira algum dado.
+•	Uso do select para “estado” e “sexo”
+•	Desenho CSS estilizado 
+•	Linguagem acessível.
+
+Ferramentas utilizadas:
+•	Git for Desktop (linha de comando)
+•	Github (repositório) 
+•	Github (onboard)
+•	Visual Estúdio Code
+•	Google Chrome
+•	Microsoft Edge
+•	Recurso de acessibilidade NVDA
+www.nvda-project.org
+
+Desenvolvimento:
+•	Análise dos requisitos
+•	Desenho do plano do projeto
+•	Divisão da história em mini “cards”
+•	Pesquisa de recursos tecnológicos em linguagens
+•	Desenvolvimento do código
+•	Teste
+•	Implantação
 
 Links de pesquisa:
-Imput text somente com números 
-https://www.codigofonte.com.br/codigos/input-text-somente-com-numeros
-Formulário HTML: criando forms e enviando dados
-https://www.homehost.com.br/blog/tutoriais/formulario-html/
+•	https://xpcorp.gama.academy/aluno
+•	https://www.w3schools.com/
+•	https://www.revista-programar.info/artigos/
+•	http://www.linhadecodigo.com.br/
+•	https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch
+•	https://pt.stackoverflow.com/
+•	https://www.devmedia.com.br/
+•	https://www.homehost.com.br/blog/tutoriais/formulario-html/
