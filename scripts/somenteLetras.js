@@ -1,25 +1,31 @@
 function ApenasLetras(e, t) {
     try {
     if (window.event) {
-    var charCode = window.event.keyCode;
-    var charCode2 = window.event.keyCode;
-    } else if (e) {
-    var charCode = e.which;
-    } else {
+    var tecla = window.event.keyCode;
+    var tecla2 = window.event.keyCode;
+    } 
+    else 
+    if (e) {
+    var tecla = e.which;
+    } 
+    else {
     return true;
     }
     if (
-    (charCode > 64 && charCode < 91) || 
-    (charCode > 96 && charCode < 123) ||
-        (charCode > 191 && charCode <= 255) ||
-        (charCode2 == 32)
+    (tecla > 64 && tecla < 91) || 
+    (tecla > 96 && tecla < 123) ||
+        (tecla > 191 && tecla <= 255) ||
+        (tecla2 == 32)
         ){
     return true;
-    } else {
+    } 
+    else {
             return false;
     }
-    } catch (err) {
+    } 
+    catch (err) {
     alert(err.Description);
+    //exceção para acentos //
     }
     }
         

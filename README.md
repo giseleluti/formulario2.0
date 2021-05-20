@@ -22,8 +22,28 @@ Implementações relevantes:
 Nome min 6; RG min 7, max 10; CPF = 11; CEP =8; DDD = 2; telephones min 8, max 9;
 •	Critério de preenchimento nos campos não obrigatórios, caso o usuário insira algum dado.
 •	Uso do select para “estado” e “sexo”
+•	Verificador de CPF 
 •	Desenho CSS estilizado 
 •	Linguagem acessível.
+
+Recursos de Javascript:
+Try... catch
+windo.event.keyCode... onkeypress
+function, if .. else...
+ternário...
+
+Recursos de html:
+lang html
+compatibilidade IE / Edge
+form... input... select... 
+button... onclick
+placeholder
+javascript (event, this)
+
+Recursos CSS:
+font-family sans-serif... fonte size...
+padding... margin... background-color...
+text-shadow... box-shadow
 
 Ferramentas utilizadas:
 •	Git for Desktop (linha de comando)
@@ -53,3 +73,6 @@ Links de pesquisa:
 •	https://pt.stackoverflow.com/
 •	https://www.devmedia.com.br/
 •	https://www.homehost.com.br/blog/tutoriais/formulario-html/
+•	https://developer.mozilla.org/pt-BR/docs/Web/JavaScript/Reference/Statements/try...catch
+•	https://adrianorosa.com/blog/jquery/jquery-keycode-tabela-de-referencia.html
+•	https://api.jquery.com/event.which/
