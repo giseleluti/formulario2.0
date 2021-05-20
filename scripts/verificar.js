@@ -25,11 +25,6 @@ alert ('Por favor informe seu bairro.');
 form.bairro.focus();
 return false;
 }
-if (form.cep.value.length != 0 && form.cep.value.length < 8)    {
-    alert ('Por favor informe seu CEP corretamente.'); 
-    form.cep.focus();
-    return false;
-    }
 if (form.cidade.value.length < 3 )    {
 alert ('Por favor informe sua cidade.'); 
 form.cidade.focus();
@@ -40,6 +35,11 @@ alert('Por favor selecione seu estado');
 form.estado.focus();
 return false;
 }
+if (form.cep.value.length != 0 && form.cep.value.length < 8)    {
+    alert ('Por favor informe seu CEP corretamente.'); 
+    form.cep.focus();
+    return false;
+    }
 if (form.ddd1.value.length < 2)    {
 alert ('Por favor preencha o prefixo DDD corretamente.'); 
 form.ddd1.focus();
@@ -50,8 +50,8 @@ alert ('Por favor preencha o celular corretamente.');
 form.celular.focus();
 return false;
 }
-if (form.ddd2.value.length != 0 && form.telefone.value.length < 8) {
-    alert ('Por favor informe DDD e telefone corretamente.'); 
+if (form.telefone.value.length < 8 && form.ddd2.value.length != 0) {
+    alert ('Por favor informe o telefone corretamente.'); 
     form.telefone.focus();
     return false;
     }

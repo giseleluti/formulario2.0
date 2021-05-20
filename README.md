@@ -4,10 +4,24 @@ Formulário básico de cadastro em HTML, Javascript e CSS
 Requisitos em: desafio Gama Bankline Atração
 https://github.com/educacao-gama/desafios-gama/tree/main/bankline/atracao
 
+Link para o projeto no repositório:
+https://github.com/giseleluti/formulario2.0
+
+
+Etapas do Desenvolvimento:
+•	Análise dos requisitos
+•	Desenho do plano do projeto
+•	Divisão da história em mini “cards”
+•	Pesquisa de recursos tecnológicos em linguagens
+•	Desenvolvimento do código
+•	Teste
+•	Implantação
+
+
 Funcionalidades:
 * Receber os dados do usuário;
-* Validar informações inseridas;
-* Criar um cadastro.
+* Validar informações inseridas.
+
 
 Requisitos:
 No formulário os campos nome, CPF, endereço, número, celular foram identificados como obrigatórios.
@@ -30,15 +44,16 @@ Recursos de Javascript:
 Try... catch
 windo.event.keyCode... onkeypress
 function, if .. else...
+alert e focus.
 ternário...
+
 
 Recursos de html:
 lang html
 compatibilidade IE / Edge
-form... input... select... 
 button... onclick
 placeholder
-javascript (event, this)
+
 
 Recursos CSS:
 font-family sans-serif... fonte size...
@@ -54,15 +69,6 @@ Ferramentas utilizadas:
 •	Microsoft Edge
 •	Recurso de acessibilidade NVDA
 www.nvda-project.org
-
-Desenvolvimento:
-•	Análise dos requisitos
-•	Desenho do plano do projeto
-•	Divisão da história em mini “cards”
-•	Pesquisa de recursos tecnológicos em linguagens
-•	Desenvolvimento do código
-•	Teste
-•	Implantação
 
 Links de pesquisa:
 •	https://xpcorp.gama.academy/aluno
